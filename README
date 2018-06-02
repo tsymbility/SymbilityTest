@@ -1,0 +1,7 @@
+This project was built with Maven with two dependencies: Selenium and TestNG. Please make sure Maven is installed with your Java IDE as it will download all the dependent libraries.
+
+Pre condition:
+1. Please make sure all browsers are closed.
+
+Execution:
+1. Open the TestSuite.xml in eclipse and run the suite as "testng suite". 

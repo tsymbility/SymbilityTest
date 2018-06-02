@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestSuite_Firefox]" parallel="tests">
+  <test thread-count="5" name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="server" value="https://www.amazon.ca"/>
+    <parameter name="password" value="1Qazxsw@"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="email" value="tsymbility@gmail.com"/>
+    <classes>
+      <class name="com.scripts.SearchPageTest">
+        <methods>
+          <include name="Setup"/>
+          <include name="tearDown"/>
+          <include name="Initialization"/>
+          <include name="VerifyCheckOutPageAfterAddItemToCart"/>
+        </methods>
+      </class> <!-- com.scripts.SearchPageTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [TestSuite_Firefox] -->

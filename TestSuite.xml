@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite_Firefox" annotations="JDK" parallel="tests">
+
+	<test name="FirefoxTest">
+		<parameter name="browser" value="firefox" />
+		<parameter name="server" value="https://www.amazon.ca" />
+
+		<parameter name="email" value="tsymbility@gmail.com" />
+		<parameter name="password" value="1Qazxsw@" />
+
+		<classes>
+			<class name="com.scripts.SignInPageTest" />
+			<class name="com.scripts.SearchPageTest" />
+		</classes>
+
+	</test>
+
+</suite>
